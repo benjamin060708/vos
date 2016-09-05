@@ -18,7 +18,7 @@
 
 <?php
     if (isset($_SESSION['user'])) {
-        header('Location: /vos/www/desktop.php');
+        header('Location: /vos/desktop.php');
     } else {
 ?>
         <p>Not logged in!</p>

@@ -1,0 +1,13 @@
+{
+    "taskbar": {
+        "location": "bottom",
+        "autohide": false,
+        "programs": [
+            {
+                "icon": "not.found",
+                "icon_alt": "Log Out",
+                "action": "_logout"
+            }
+        ]
+    }
+}
