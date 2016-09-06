@@ -48,11 +48,18 @@ body {
     background: -webkit-linear-gradient(top, #606c88 0%,#3f4c6b 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, #606c88 0%,#3f4c6b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
+
+.app-frame {
+    position: absolute;
+    resize: both;
+}
 </style>
 </head>
 
 <body>
 <div id="taskbar"><?php echo $data['programs']; ?></div>
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 
 <script>
 function handleLogout() {
@@ -62,7 +69,17 @@ function handleLogout() {
 }
 
 function runNotepad() {
-    alert('Hi.  I\'m Notepad.');
+    alert("Hi.  I'm Notepad.");
+}
+
+function runBrowser() {
+    $('<iframe>', {
+        src: 'https://www.whizkidzcc.com',
+        id: 'notepad-frame',
+        class: 'app-frame',
+        width: 800,
+        height: 600
+    }).appendTo('body');
 }
 </script>
 </body>

@@ -1,10 +1,11 @@
 {
     "taskbar": {
-        "location": "top",
+        "location": "bottom",
         "autohide": false,
         "programs": [
             "logout",
-            "notepad"
+            "notepad",
+            "browser"
         ]
     },
 
@@ -19,6 +20,12 @@
             "name": "Notepad",
             "icon": "images/notepad.png",
             "action": "runNotepad"
+
+        },
+        "browser": {
+            "name": "Browser",
+            "icon": "images/browser.png",
+            "action": "runBrowser"
 
         }
     }
