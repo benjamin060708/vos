@@ -1,0 +1,13 @@
+{
+    "taskbar": {
+        "location": "top",
+        "autohide": false,
+        "programs": [
+            {
+                "icon": "images/logout.png",
+                "icon_alt": "Logout",
+                "action": "_logout"
+            }
+        ]
+    }
+}
