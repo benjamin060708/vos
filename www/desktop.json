@@ -3,11 +3,21 @@
         "location": "bottom",
         "autohide": false,
         "programs": [
-            {
-                "icon": "not.found",
-                "icon_alt": "Log Out",
-                "action": "_logout"
-            }
+            "logout", "notepad"
         ]
+    },
+
+    "apps": {
+        "logout": {
+            "icon": "not.found",
+            "name": "Log Out",
+            "action": "handleLogout"
+        },
+
+        "notepad": {
+            "icon": "notepad-icon.png",
+            "name": "Notepad",
+            "action": "runNotepad"
+        }
     }
 }

@@ -13,7 +13,7 @@
 <meta charset="utf-8">
 </head>
 <body>
-<h1>Test</h1>
+<h1>Virtual OS Login</h1>
 <p>Session ID = <?php echo session_id();?></p>
 
 <?php

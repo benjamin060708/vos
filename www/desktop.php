@@ -18,8 +18,9 @@ if ($taskbar['location'] === 'top') {
 
 $data['programs'] = '';
 foreach ($taskbar['programs'] as $item) {
-    if (isset($item['icon'])) {
-        $data['programs'] = $data['programs'] . '<a href="#" onclick="handleLogout()"><img src="' . $item['icon'] . '" alt="' . $item['icon_alt']. '"></a>';
+    $app = $json['apps'][$item];
+    if ($app) {
+        $data['programs'] = $data['programs'] . '<a href="#" onclick="' . $app['action'] . '()"><img src="' . $app['icon'] . '" alt="' . $app['name'] . '" title="' . $app['name'] . '" width="32" height="32"></a>';
     }
 }
 
@@ -56,6 +57,10 @@ function handleLogout() {
     if (confirm("Are you sure you want to log out?")) {
         window.location = 'logout.php';
     }
+}
+
+function runNotepad() {
+    alert("Hi. I'm Notepad.");
 }
 </script>
 </body>
