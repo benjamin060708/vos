@@ -49,6 +49,10 @@ body {
     background: linear-gradient(to bottom, #606c88 0%,#3f4c6b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
+#taskbar img {
+    margin: 4px;
+}
+
 .app-frame {
     position: absolute;
     resize: both;
